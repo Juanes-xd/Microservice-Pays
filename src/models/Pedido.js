@@ -15,9 +15,6 @@ export const Pedido = sequelize.define(
     valor: {
       type: DataTypes.INTEGER,
     },
-    id_product: {
-      type: DataTypes.INTEGER,
-    },
     cantidad: {
       type: DataTypes.INTEGER,
     },

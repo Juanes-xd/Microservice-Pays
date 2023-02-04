@@ -24,11 +24,11 @@ export const getFacturas = async (req, res) => {
 };
 
 export const createFactura = async (req, res) => {
-  const { id_pedido, username, precio, total, direccion, ciudad } = req.body;
+  const { id_pedido, id_user, precio, total, direccion, ciudad } = req.body;
   try {
     const newFactura = await Factura.create({
       id_pedido,
-      username,
+      id_user,
       precio,
       total,
       direccion,

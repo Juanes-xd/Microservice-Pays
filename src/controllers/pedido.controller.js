@@ -24,12 +24,12 @@ export const getPedidos = async (req, res) => {
 };
 
 export const createPedido = async (req, res) => {
-  const { id_usuario, valor, id_product, cantidad } = req.body;
+  const { id_usuario, valor, cantidad } = req.body;
   try {
     const newPedido = await Pedido.create({
       id_usuario,
       valor,
-      id_product,
+
       cantidad,
     });
     res.json(newPedido);

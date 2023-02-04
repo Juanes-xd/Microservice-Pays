@@ -13,7 +13,7 @@ export const Factura = sequelize.define(
     id_pedido: {
       type: DataTypes.INTEGER,
     },
-    user_name: {
+    id_user: {
       type: DataTypes.STRING,
     },
     precio: {
